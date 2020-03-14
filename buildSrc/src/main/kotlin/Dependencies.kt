@@ -7,6 +7,12 @@ object Versions {
     const val appCompat = "1.1.0"
     const val androidKtx = "1.2.0"
 
+    object Debug {
+
+        const val leakCanary = "2.2"
+
+    }
+
     object Network {
 
         const val retrofit = "2.7.2"
@@ -20,6 +26,12 @@ object Libs {
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val androidKtx = "androidx.core:core-ktx:${Versions.androidKtx}"
+
+    object Debug {
+
+        const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.Debug.leakCanary}"
+
+    }
 
     object Network {
 
