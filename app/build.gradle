@@ -43,9 +43,9 @@ dependencies {
     debugImplementation Libs.Debug.leakCanary
 
     implementation Libs.kotlin
-    implementation Libs.appCompat
-    implementation Libs.androidKtx
-    implementation Libs.constraintLayout
+    implementation Libs.Android.appCompat
+    implementation Libs.Android.androidKtx
+    implementation Libs.Android.constraintLayout
     implementation Libs.Network.retrofit
 
     testImplementation 'junit:junit:4.12'
