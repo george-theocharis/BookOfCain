@@ -18,6 +18,12 @@ object Versions {
 
     }
 
+    object Di {
+
+        const val koin = "2.1.0"
+
+    }
+
     object Network {
 
         const val retrofit = "2.7.2"
@@ -40,6 +46,12 @@ object Libs {
     object Debug {
 
         const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.Debug.leakCanary}"
+
+    }
+
+    object Di {
+
+        val koin = "org.koin:koin-android:${Versions.Di.koin}"
 
     }
 
