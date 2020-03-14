@@ -42,7 +42,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     debugImplementation Libs.Debug.leakCanary
 
-    implementation Libs.kotlin
+    implementation Libs.Kotlin.kotlin
+    implementation Libs.Kotlin.coroutines
 
     implementation Libs.Android.appCompat
     implementation Libs.Android.androidKtx

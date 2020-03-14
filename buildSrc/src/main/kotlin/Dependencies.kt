@@ -2,7 +2,10 @@ package dependencies
 
 object Versions {
 
-    const val kotlin = "1.3.61"
+    object Kotlin {
+        const val kotlin = "1.3.61"
+        const val coroutines = "1.3.4"
+    }
 
     object Android {
 
@@ -40,7 +43,12 @@ object Versions {
 
 object Libs {
 
-    const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}"
+    object Kotlin {
+
+        const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Kotlin.kotlin}"
+        const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Kotlin.coroutines}"
+
+    }
 
     object Android {
 
