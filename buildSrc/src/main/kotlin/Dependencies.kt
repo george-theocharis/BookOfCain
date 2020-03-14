@@ -29,6 +29,13 @@ object Versions {
         const val retrofit = "2.7.2"
 
     }
+
+    object Testing {
+
+        const val mockk = "1.9"
+
+    }
+
 }
 
 object Libs {
@@ -58,6 +65,12 @@ object Libs {
     object Network {
 
         const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.Network.retrofit}"
+
+    }
+
+    object Testing {
+
+        const val mockk = "io.mockk:mockk:${Versions.Testing.mockk}"
 
     }
 
