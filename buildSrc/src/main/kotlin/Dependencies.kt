@@ -4,40 +4,40 @@ object Versions {
 
     object Kotlin {
 
-        const val kotlin = "1.3.61"
-        const val coroutines = "1.3.4"
+        const val KOTLIN = "1.3.61"
+        const val COROUTINES = "1.3.4"
 
     }
 
     object Android {
 
-        const val constraintLayout = "1.1.3"
-        const val appCompat = "1.1.0"
-        const val androidKtx = "1.2.0"
+        const val CONSTRAINT_LAYOUT = "1.1.3"
+        const val APP_COMPAT = "1.1.0"
+        const val ANDROID_KTX = "1.2.0"
 
     }
 
     object Debug {
 
-        const val leakCanary = "2.2"
+        const val LEAK_CANARY = "2.2"
 
     }
 
     object Di {
 
-        const val koin = "2.1.0"
+        const val KOIN = "2.1.0"
 
     }
 
     object Network {
 
-        const val retrofit = "2.7.2"
+        const val RETROFIT = "2.7.2"
 
     }
 
     object Testing {
 
-        const val mockk = "1.9"
+        const val MOCKK = "1.9"
 
     }
 
@@ -47,40 +47,40 @@ object Libs {
 
     object Kotlin {
 
-        const val kotlin = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Kotlin.kotlin}"
-        const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Kotlin.coroutines}"
+        const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Kotlin.KOTLIN}"
+        const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Kotlin.COROUTINES}"
 
     }
 
     object Android {
 
-        const val appCompat = "androidx.appcompat:appcompat:${Versions.Android.appCompat}"
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.Android.constraintLayout}"
-        const val androidKtx = "androidx.core:core-ktx:${Versions.Android.androidKtx}"
+        const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.Android.APP_COMPAT}"
+        const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${Versions.Android.CONSTRAINT_LAYOUT}"
+        const val ANDROID_KTX = "androidx.core:core-ktx:${Versions.Android.ANDROID_KTX}"
 
     }
 
     object Debug {
 
-        const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.Debug.leakCanary}"
+        const val LEAK_CANARY = "com.squareup.leakcanary:leakcanary-android:${Versions.Debug.LEAK_CANARY}"
 
     }
 
     object Di {
 
-        val koin = "org.koin:koin-android:${Versions.Di.koin}"
+        const val KOIN = "org.koin:koin-android:${Versions.Di.KOIN}"
 
     }
 
     object Network {
 
-        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.Network.retrofit}"
+        const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.Network.RETROFIT}"
 
     }
 
     object Testing {
 
-        const val mockk = "io.mockk:mockk:${Versions.Testing.mockk}"
+        const val MOCKK = "io.mockk:mockk:${Versions.Testing.MOCKK}"
 
     }
 

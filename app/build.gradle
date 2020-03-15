@@ -40,21 +40,21 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    debugImplementation Libs.Debug.leakCanary
+    debugImplementation Libs.Debug.LEAK_CANARY
 
-    implementation Libs.Kotlin.kotlin
-    implementation Libs.Kotlin.coroutines
+    implementation Libs.Kotlin.KOTLIN
+    implementation Libs.Kotlin.COROUTINES
 
-    implementation Libs.Android.appCompat
-    implementation Libs.Android.androidKtx
-    implementation Libs.Android.constraintLayout
+    implementation Libs.Android.APP_COMPAT
+    implementation Libs.Android.ANDROID_KTX
+    implementation Libs.Android.CONSTRAINT_LAYOUT
 
-    implementation Libs.Di.koin
+    implementation Libs.Di.KOIN
 
-    implementation Libs.Network.retrofit
+    implementation Libs.Network.RETROFIT
 
     testImplementation 'junit:junit:4.12'
-    testImplementation Libs.Testing.mockk
+    testImplementation Libs.Testing.MOCKK
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
