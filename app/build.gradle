@@ -56,6 +56,7 @@ dependencies {
 
     testImplementation 'junit:junit:4.12'
     testImplementation Libs.Testing.MOCKK
+    testImplementation Libs.Testing.COROUTINES
     testImplementation Libs.Android.Test.CORE
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

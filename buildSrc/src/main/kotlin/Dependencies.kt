@@ -45,6 +45,7 @@ object Versions {
     object Testing {
 
         const val MOCKK = "1.9"
+        const val COROUTINES = "1.3.5"
 
     }
 
@@ -95,6 +96,7 @@ object Libs {
     object Testing {
 
         const val MOCKK = "io.mockk:mockk:${Versions.Testing.MOCKK}"
+        const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.Testing.COROUTINES}"
 
     }
 
