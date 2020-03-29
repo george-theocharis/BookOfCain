@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+import dependencies.Libs
+
 def secretPropertiesFile = rootProject.file("secret.properties")
 def secretProperties = new Properties()
 secretProperties.load(new FileInputStream(secretPropertiesFile))
@@ -28,16 +30,31 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation Libs.kotlin
-    implementation Libs.appCompat
-    implementation Libs.androidKtx
-    implementation Libs.constraintLayout
+    debugImplementation Libs.Debug.LEAK_CANARY
+
+    implementation Libs.Kotlin.KOTLIN
+    implementation Libs.Kotlin.COROUTINES
+
+    implementation Libs.Android.APP_COMPAT
+    implementation Libs.Android.ANDROID_KTX
+    implementation Libs.Android.CONSTRAINT_LAYOUT
+
+    implementation Libs.Di.KOIN
+
+    implementation Libs.Network.RETROFIT
+
     testImplementation 'junit:junit:4.12'
+    testImplementation Libs.Testing.MOCKK
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }

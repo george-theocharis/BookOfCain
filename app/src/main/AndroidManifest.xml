@@ -3,6 +3,7 @@
     package="project.book.of.cain">
 
     <application
+        android:name="project.book.of.cain.BocApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
