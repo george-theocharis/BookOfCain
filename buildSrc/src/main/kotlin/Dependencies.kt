@@ -15,6 +15,12 @@ object Versions {
         const val APP_COMPAT = "1.1.0"
         const val ANDROID_KTX = "1.2.0"
 
+        object Test {
+
+            const val CORE = "2.1.0"
+
+        }
+
     }
 
     object Debug {
@@ -57,6 +63,12 @@ object Libs {
         const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.Android.APP_COMPAT}"
         const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${Versions.Android.CONSTRAINT_LAYOUT}"
         const val ANDROID_KTX = "androidx.core:core-ktx:${Versions.Android.ANDROID_KTX}"
+
+        object Test {
+
+            const val CORE = "androidx.arch.core:core-testing:${Versions.Android.Test.CORE}"
+
+        }
 
     }
 
