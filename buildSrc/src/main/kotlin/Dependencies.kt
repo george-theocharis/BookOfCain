@@ -14,6 +14,7 @@ object Versions {
         const val CONSTRAINT_LAYOUT = "1.1.3"
         const val APP_COMPAT = "1.1.0"
         const val ANDROID_KTX = "1.2.0"
+        const val VIEWMODEL_KTX = "2.1.0"
 
         object Test {
 
@@ -63,6 +64,7 @@ object Libs {
         const val APP_COMPAT = "androidx.appcompat:appcompat:${Versions.Android.APP_COMPAT}"
         const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${Versions.Android.CONSTRAINT_LAYOUT}"
         const val ANDROID_KTX = "androidx.core:core-ktx:${Versions.Android.ANDROID_KTX}"
+        const val VIEWMODEL_KTX = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.Android.VIEWMODEL_KTX}"
 
         object Test {
 

@@ -47,6 +47,7 @@ dependencies {
 
     implementation Libs.Android.APP_COMPAT
     implementation Libs.Android.ANDROID_KTX
+    implementation Libs.Android.VIEWMODEL_KTX
     implementation Libs.Android.CONSTRAINT_LAYOUT
 
     implementation Libs.Di.KOIN
