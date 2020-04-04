@@ -1,6 +1,7 @@
 package project.book.of.cain.acts.domain
 
 data class Act(
-    val id: String,
-    val name: String
+    val number: Int,
+    val name: String,
+    val quests: List<Quest>
 )
