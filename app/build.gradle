@@ -44,6 +44,7 @@ dependencies {
 
     implementation Libs.Kotlin.KOTLIN
     implementation Libs.Kotlin.COROUTINES
+    implementation Libs.Kotlin.SERIALIZER
 
     implementation Libs.Android.APP_COMPAT
     implementation Libs.Android.ANDROID_KTX
@@ -53,6 +54,7 @@ dependencies {
     implementation Libs.Di.KOIN
 
     implementation Libs.Network.RETROFIT
+    implementation Libs.Network.CONVERTER
 
     testImplementation 'junit:junit:4.12'
     testImplementation Libs.Testing.MOCKK

@@ -39,6 +39,7 @@ object Versions {
     object Network {
 
         const val RETROFIT = "2.7.2"
+        const val CONVERTER = "0.5.0"
 
     }
 
@@ -57,6 +58,7 @@ object Libs {
 
         const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.Kotlin.KOTLIN}"
         const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.Kotlin.COROUTINES}"
+        const val SERIALIZER = "org.jetbrains.kotlin:kotlin-serialization:${Versions.Kotlin.KOTLIN}"
 
     }
 
@@ -90,6 +92,7 @@ object Libs {
     object Network {
 
         const val RETROFIT = "com.squareup.retrofit2:retrofit:${Versions.Network.RETROFIT}"
+        const val CONVERTER = "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:${Versions.Network.CONVERTER}"
 
     }
 
