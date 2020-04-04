@@ -4,7 +4,7 @@ object Versions {
 
     object Kotlin {
 
-        const val KOTLIN = "1.3.61"
+        const val KOTLIN = "1.3.71"
         const val COROUTINES = "1.3.4"
 
     }
@@ -32,7 +32,7 @@ object Versions {
 
     object Di {
 
-        const val KOIN = "2.1.0"
+        const val KOIN = "2.1.2"
 
     }
 
