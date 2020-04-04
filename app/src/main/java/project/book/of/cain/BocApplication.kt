@@ -15,12 +15,7 @@ class BocApplication : Application() {
         startKoin {
             androidLogger()
             androidContext(this@BocApplication)
-            modules(
-                listOf(
-                    networkModule,
-                    actsModule
-                )
-            )
+            modules(listOf(networkModule, actsModule))
         }
 
     }

@@ -9,7 +9,7 @@ class ActsRepositoryImpl(private val api: ActsApi): ActsRepository {
 
     override suspend fun getActs(): Either<Error, List<Act>> {
         return try {
-            val actsList = api.getActs()
+            val actsList = api.getActs().acts
             Either.Success(actsList.map { it.toAct() })
         } catch (ex: Exception) {
             Either.Failure(ex.toError())

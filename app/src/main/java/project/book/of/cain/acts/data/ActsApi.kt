@@ -5,6 +5,6 @@ import retrofit2.http.GET
 interface ActsApi {
 
     @GET("/d3/data/act")
-    suspend fun getActs(): List<ActRaw>
+    suspend fun getActs(): ActsRaw
 
 }
