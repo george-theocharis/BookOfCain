@@ -11,11 +11,16 @@ private const val BASE_URL = "https://us.api.blizzard.com"
 private const val CONTENT_TYPE = "application/json"
 
 val networkModule = module {
-    factory { provideOkHttp() }
-    single { provideRetrofit(get()) }
+    factory { AuthInterceptor() }
+    factory { provideOkHttp(authInterceptor = get()) }
+    single { provideRetrofit(okHttpClient = get()) }
 }
 
-private fun provideOkHttp() = OkHttpClient().newBuilder().build()
+private fun provideOkHttp(authInterceptor: AuthInterceptor): OkHttpClient {
+    return OkHttpClient().newBuilder()
+        .addInterceptor(authInterceptor)
+        .build()
+}
 
 private fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
     return Retrofit.Builder()
