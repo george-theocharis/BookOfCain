@@ -40,6 +40,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     debugImplementation Libs.Debug.LEAK_CANARY
 
     implementation Libs.Kotlin.KOTLIN
@@ -52,13 +53,15 @@ dependencies {
     implementation Libs.Android.CONSTRAINT_LAYOUT
 
     implementation Libs.Di.KOIN
+    implementation Libs.Di.VIEWMODEL
 
     implementation Libs.Network.RETROFIT
     implementation Libs.Network.CONVERTER
 
-    testImplementation 'junit:junit:4.12'
+    testImplementation Libs.Testing.JUNIT
     testImplementation Libs.Testing.MOCKK
     testImplementation Libs.Testing.COROUTINES
+
     testImplementation Libs.Android.Test.CORE
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

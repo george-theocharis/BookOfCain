@@ -47,6 +47,7 @@ object Versions {
 
         const val MOCKK = "1.9"
         const val COROUTINES = "1.3.5"
+        const val JUNIT = "4.12"
 
     }
 
@@ -86,6 +87,7 @@ object Libs {
     object Di {
 
         const val KOIN = "org.koin:koin-android:${Versions.Di.KOIN}"
+        const val VIEWMODEL = "org.koin:koin-androidx-viewmodel:${Versions.Di.KOIN}"
 
     }
 
@@ -98,6 +100,7 @@ object Libs {
 
     object Testing {
 
+        const val JUNIT = "junit:junit:${Versions.Testing.JUNIT}"
         const val MOCKK = "io.mockk:mockk:${Versions.Testing.MOCKK}"
         const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.Testing.COROUTINES}"
 
