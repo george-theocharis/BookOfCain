@@ -32,5 +32,4 @@ class ActsRepositoryTest {
 
         assertEquals(result, Either.Failure(Error.SimpleError("No internet")))
     }
-
 }
