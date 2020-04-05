@@ -12,11 +12,7 @@ import project.book.of.cain.utils.Error
 class ActsViewModel(private val repository: ActsRepository) : ViewModel() {
 
     private val _state = MutableLiveData<ActsScreen.State>()
-    fun state(): LiveData<ActsScreen.State> = _state
-
-    init {
-        _state.value = ActsScreen.State()
-    }
+    fun state(): LiveData<ActsScreen.State> = _state.also { it.value = ActsScreen.State() }
 
     fun onEvent(event: ActsScreen.Event) {
         when (event) {
@@ -28,8 +24,10 @@ class ActsViewModel(private val repository: ActsRepository) : ViewModel() {
         viewModelScope.launch {
             _state.value = _state.value?.copy(loading = true)
             when (val result = repository.getActs()) {
-                is Either.Success -> _state.value = _state.value?.copy(loading = false, acts = result.data)
-                is Either.Failure -> _state.value = _state.value?.copy(loading = false, error = resolveError(result.error))
+                is Either.Success -> _state.value =
+                    _state.value?.copy(loading = false, acts = result.data)
+                is Either.Failure -> _state.value =
+                    _state.value?.copy(loading = false, error = resolveError(result.error))
             }
         }
     }
