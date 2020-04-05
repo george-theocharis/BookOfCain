@@ -17,7 +17,5 @@ class BocApplication : Application() {
             androidContext(this@BocApplication)
             modules(listOf(networkModule, actsModule))
         }
-
     }
-
 }

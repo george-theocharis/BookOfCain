@@ -6,5 +6,4 @@ interface ActsApi {
 
     @GET("/d3/data/act")
     suspend fun getActs(): ActsRaw
-
 }

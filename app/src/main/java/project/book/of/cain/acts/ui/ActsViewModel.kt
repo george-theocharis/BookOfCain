@@ -37,7 +37,4 @@ class ActsViewModel(private val repository: ActsRepository) : ViewModel() {
     private fun resolveError(error: Error) = when (error) {
         is Error.SimpleError -> error.reason
     }
-
 }
-
-

@@ -12,7 +12,6 @@ object ActsScreen {
     )
 
     sealed class Event {
-        object FetchActs: Event()
+        object FetchActs : Event()
     }
-
 }

@@ -6,5 +6,4 @@ import project.book.of.cain.utils.Error
 interface ActsRepository {
 
     suspend fun getActs(): Either<Error, List<Act>>
-
 }

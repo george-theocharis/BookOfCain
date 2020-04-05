@@ -12,5 +12,4 @@ data class ActRaw(
 ) {
 
     fun toAct() = Act(number, name, quests.map { it.toQuest() })
-
 }

@@ -1,3 +1,5 @@
+[![ktlint](https://img.shields.io/badge/code%20style-%E2%9D%A4-FF4081.svg)](https://ktlint.github.io/)
+
 # BookOfCain
 This is a fan made diablo project to showcase Android technologies and best practices.
 

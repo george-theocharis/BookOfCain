@@ -11,6 +11,4 @@ data class QuestRaw(
 ) {
 
     fun toQuest() = Quest(id, name)
-
 }
-

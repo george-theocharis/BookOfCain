@@ -89,5 +89,4 @@ class ActsViewModelTest {
             observerMock.onChanged(failure)
         }
     }
-
 }

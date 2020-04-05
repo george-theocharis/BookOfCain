@@ -3,13 +3,12 @@ package project.book.of.cain.network
 import okhttp3.Interceptor
 import okhttp3.Response
 
-class AuthInterceptor: Interceptor {
+class AuthInterceptor : Interceptor {
 
     companion object {
 
         private const val ACCESS_TOKEN = "access_token"
         private const val LOCALE = "locale"
-
     }
 
     override fun intercept(chain: Interceptor.Chain): Response {
@@ -22,5 +21,4 @@ class AuthInterceptor: Interceptor {
 
         return chain.proceed(request.newBuilder().url(url).build())
     }
-
 }
