@@ -9,3 +9,11 @@ sealed class Either<out E, out T> {
 sealed class Error {
     data class SimpleError(val reason: String = "An error occurred!") : Error()
 }
+
+suspend fun <T> either(block: suspend () -> T) = try {
+    Either.Success(block())
+} catch (ex: Exception) {
+    Either.Failure(ex.toError())
+}
+
+fun Exception.toError() = message?.let { Error.SimpleError(it) } ?: Error.SimpleError()

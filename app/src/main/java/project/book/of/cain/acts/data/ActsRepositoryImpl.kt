@@ -1,18 +1,11 @@
 package project.book.of.cain.acts.data
 
 import project.book.of.cain.acts.domain.ActsRepository
-import project.book.of.cain.utils.Either
-import project.book.of.cain.utils.Error
+import project.book.of.cain.utils.either
 
 class ActsRepositoryImpl(private val api: ActsApi) : ActsRepository {
 
-    override suspend fun getActs() = try {
-        val actsList = api.getActs().acts
-        Either.Success(actsList.map { it.toAct() })
-    } catch (ex: Exception) {
-        Either.Failure(ex.toError())
+    override suspend fun getActs() = either {
+        api.getActs().acts.map { it.toAct() }
     }
-
-    private fun Exception.toError(): Error =
-        message?.let { Error.SimpleError(it) } ?: Error.SimpleError()
 }
