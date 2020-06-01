@@ -32,5 +32,6 @@ jobs:
         with:
           github-token: ${{github.token}}
           script: |
-          await context.github.issues.addAssignees(context.payload.pull_request.user.login)
-
+          const result = await context.github.issues.addAssignees(context.payload.pull_request.user.login)
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
