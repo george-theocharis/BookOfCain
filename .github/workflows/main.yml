@@ -32,10 +32,5 @@ jobs:
         with:
           github-token: ${{github.token}}
           script: |
-          await client.issues.addAssignees({
-          owner: github.context.repo.owner,
-          repo: github.context.repo.repo,
-          issue_number: number,
-          assignees: [author]
-    });
+          await context.github.issues.addAssignees(context.payload.pull_request.user.login)
 
